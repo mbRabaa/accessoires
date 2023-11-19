@@ -1,0 +1,186 @@
+
+/*page utilisateur*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  font-family: "Sansita Swashed", cursive;
+}
+.center {
+  margin-top: 60px;
+  position: relative;
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 10px;
+  
+}
+.center h1 {
+  font-size: 2em;
+  border-left: 5px solid dodgerblue;
+  padding: 10px;
+  color: #000;
+  letter-spacing: 5px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.center .inputbox {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+.center .inputbox:last-child {
+  margin-bottom: 0;
+}
+.center .inputbox span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1em;
+  transition: 0.6s;
+  font-family: sans-serif;
+}
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+.center .inputbox [type="button"] {
+  width: 50%;
+  background: dodgerblue;
+  color: #fff;
+  border: #fff;
+}
+.center .inputbox:hover [type="button"] {
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+
+/*page index */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    font-family: 'system-ui',sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+.contanier{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 0 8%;
+ 
+  
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+
+}
+.form-wrapper.card{
+    width: 360px;
+    padding: 20px;
+    background-color: rgb(0 0 0 /35%);
+    visibility: hidden;
+    opacity: 0;
+    
+}
+.card.show{
+    visibility: visible;
+    opacity: 1;
+}
+.card.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 20px 0;
+    font-size: 1.1rem;
+    color:gray;
+     box-shadow: 2px 3px 8px #d3f7ff71;
+     border-radius: 50px;
+}
+.card-header .form-header {
+    flex: 50%;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+
+}
+.card-header .form-header.active{
+    box-shadow: inset 1px 1px 2px rgb(19 210 177 / 55%) ,inset -1px 1px 2px rgb(19 210 177 / 55%),inset -1px -1px 2px rgb(19 210 177 / 55%), inset 1px -1px 2px rgb(19 210 177 / 55%);
+    border-color:gray;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.card.body{
+    display:flex;
+    flex-wrap: nowrap;
+    padding: 40px 0;
+    text-align: center;
+}
+form{
+    flex: 0 0 100%;
+}
+.toggleForm{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s ;
+}
+.form-control{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(134 255 249 /65%);
+    background: none;
+    outline: none;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    color:gray;
+}
+.form-control::placeholder{
+    color: rgb(32, 30, 30);
+}
+.formButton{
+    border: 1px solid transparent;
+    padding: 1rem 3rem;
+    background-color:gray ;
+    border-radius: 50px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+.formButton:hover{
+    box-shadow: 3px 5px 15px #94f7e6 ;
+    transform: translateY(-5px );
+}
+/*page compt */
